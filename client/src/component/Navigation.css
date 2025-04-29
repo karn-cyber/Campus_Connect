@@ -61,3 +61,9 @@ ul li a:hover {
     border-radius: 8px;
    
 }
+/* Active link style */
+ul li a.active {
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}

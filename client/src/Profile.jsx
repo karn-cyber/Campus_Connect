@@ -59,7 +59,7 @@ const Profile = () => {
             }}
           >
             <h2 style={{ margin: 10 }}>Neelanshu Karn</h2>
-            <p style={{ margin: 10, marginTop: '20px', color: '#555' }}>
+            <p style={{ margin: 10, marginTop: 0, color: '#555' }}>
               Rishihood University
             </p>
           </div>

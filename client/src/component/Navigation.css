@@ -1,0 +1,63 @@
+/* Reset link styles */
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navbar container */
+nav {
+    position: fixed; /* FIXED navbar */
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for clarity */
+    z-index: 1000; /* Stay above everything */
+}
+
+/* Navbar list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px; /* Some space inside navbar */
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center;
+}
+
+/* Logo styling */
+.logo h1 a {
+    color: red; /* Make "Campus Connect" red */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* List item styling */
+li {
+    margin-left: 20px;
+}
+
+/* Regular links */
+ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+
+
+/* Optional: Hover effect */
+ul li a:hover {
+    background-color: #9e1f1f;
+    color:#fff;
+    transition: 0.5s ease-out;
+    border-radius: 8px;
+}
+.logout{
+    background-color: #9e1f1f;
+    border-radius: 8px;
+   
+}

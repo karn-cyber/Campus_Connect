@@ -1,0 +1,72 @@
+.servicecard-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    
+  }
+  
+  .servicecard {
+    width: 320px;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .servicecard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .servicecard-top img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .servicecard-top img:hover {
+    transform: scale(1.1);
+  }
+  
+  .servicecard-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .servicecard-title h3 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  
+  .servicecard-button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #9e1f1f,#741717 );
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+  }
+  
+  .servicecard-button:hover {
+    background: linear-gradient(135deg, #e61d1d,#b70404 );
+  }
+
+  .servicecard-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+  }
+
+  

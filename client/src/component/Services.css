@@ -1,0 +1,16 @@
+.services-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+ h2{
+    font-weight: bold;
+    text-align:center;
+  }

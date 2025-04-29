@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Dashboard.css"
-import Carousel from './component/carousel';
+import Carousel from './component/Carousel';
 import Navigation from './component/Navigation';
 import Services from './component/Services';
 import Essentials from './component/Essentials';

@@ -30,7 +30,7 @@ const Navigation = () => {
           <a href="./Profile" className={isActive('/profile') ? 'active' : ''}>Profile</a>
           </li>
           <li>
-            < Link to="./login" className={isActive('/logout') ? 'active logout' : 'logout'} style={{color: 'white'}}>Logout</Link>
+            < a href="./login" className={isActive('/logout') ? 'active logout' : 'logout'} style={{color: 'white'}}>Logout</a>
           </li>
         </ul>
       </nav>

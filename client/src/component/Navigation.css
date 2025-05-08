@@ -1,4 +1,4 @@
-/* Reset link styles */
+
 
 a {
     color: black;
@@ -6,39 +6,39 @@ a {
     text-decoration: none;
 }
 
-/* Navbar container */
+
 nav {
-    position: fixed; /* FIXED navbar */
+    position: fixed; 
     top: 0;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for clarity */
-    z-index: 1000; /* Stay above everything */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    z-index: 1000;
 }
 
-/* Navbar list */
+
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 20px; /* Some space inside navbar */
+    padding: 10px 20px; 
     display: flex;
-    justify-content: space-between; /* Space between logo and menu */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Logo styling */
+
 .logo h1 a {
-    color: red; /* Make "Campus Connect" red */
+    color: red; 
     font-size: 24px;
     font-weight: bold;
 }
 
-/* List item styling */
+
 li {
     margin-left: 20px;
 }
 
-/* Regular links */
+
 ul li a {
     display: block;
     color: rgb(0, 0, 0);
@@ -49,7 +49,7 @@ ul li a {
 
 
 
-/* Optional: Hover effect */
+
 ul li a:hover {
     background-color: #9e1f1f;
     color:#fff;
@@ -61,7 +61,7 @@ ul li a:hover {
     border-radius: 8px;
    
 }
-/* Active link style */
+
 ul li a.active {
     color: red;
     font-weight: bold;

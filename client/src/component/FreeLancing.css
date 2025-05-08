@@ -7,7 +7,7 @@
     position: relative;
   }
   
-  /* Opportunities section */
+
   .freelancing-opportunities {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
     width: 70%;
   }
   
-  /* Each opportunity card */
+
   .opportunity-card {
     width: 45%;
     background: #fff;
@@ -26,12 +26,12 @@
     position: relative;
   }
   
-  /* Hover effect */
+  
   .opportunity-card:hover {
     transform: translateY(-5px);
   }
   
-  /* Posted by text */
+
   .posted-by {
     font-size: 14px;
     color: gray;
@@ -45,7 +45,7 @@
     margin-left: 10px;
   }
   
-  /* Chatbox styling */
+
   .chatbox {
     width: 28%;
     height: 400px;
@@ -60,12 +60,12 @@
     justify-content: space-between;
   }
   
-  /* Chat header */
+
   .chatbox h3 {
     margin-bottom: 10px;
   }
   
-  /* Messages section */
+
   .chat-messages {
     flex: 1;
     background-color: white;
@@ -75,7 +75,7 @@
     overflow-y: auto;
   }
   
-  /* Chat input */
+
   .chat-input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -83,7 +83,7 @@
     margin-bottom: 10px;
   }
   
-  /* Send button */
+  
   .send-button {
     background-color: #9e1f1f;
     color: white;
@@ -94,7 +94,7 @@
     font-weight: bold;
   }
   
-  /* Send button hover */
+
   .send-button:hover {
     background-color: #741717 ;
   }

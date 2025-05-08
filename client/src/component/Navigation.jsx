@@ -15,7 +15,7 @@ const Navigation = () => {
             <h1><Link to="/dashboard">Campus Connect</Link></h1>
           </li>
           <li>
-            <a href="#dashboard" className={isActive('/events') ? 'active' : ''}>Events</a>
+            <a href="#Carousel" className={isActive('/events') ? 'active' : ''}>Events</a>
           </li>
           <li>
             <a href="#Services" className={isActive('/services') ? 'active' : ''}>Services</a>
@@ -27,10 +27,10 @@ const Navigation = () => {
             <a href="#Essentials" className={isActive('/essentials') ? 'active' : ''}>Essentials</a>
           </li>
           <li>
-            <Link to="./profile" className={isActive('/profile') ? 'active' : ''}>Profile</Link>
+          <a href="#Profile" className={isActive('/profile') ? 'active' : ''}>Profile</a>
           </li>
           <li>
-            < Link to="./logout" className={isActive('/logout') ? 'active logout' : 'logout'} style={{color: 'white'}}>Logout</Link>
+            < Link to="./login" className={isActive('/logout') ? 'active logout' : 'logout'} style={{color: 'white'}}>Logout</Link>
           </li>
         </ul>
       </nav>

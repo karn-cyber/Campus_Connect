@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './component/Navigation'
-import profilePic from './assets/NeelanshuKarn.jpeg' // Correct image import
+import profilePic from './assets/NeelanshuKarn.jpeg' 
 
 const Profile = () => {
   return (
@@ -22,7 +22,6 @@ const Profile = () => {
             borderRadius: '12px'
           }}
         >
-          {/* Profile Image */}
           <div
             style={{
               height: '250px',
@@ -49,7 +48,6 @@ const Profile = () => {
             />
           </div>
 
-          {/* Name and Details */}
           <div
             style={{
               marginLeft: '20px',

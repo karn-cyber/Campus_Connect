@@ -27,7 +27,7 @@ const Navigation = () => {
             <a href="#Essentials" className={isActive('/essentials') ? 'active' : ''}>Essentials</a>
           </li>
           <li>
-          <a href="#Profile" className={isActive('/profile') ? 'active' : ''}>Profile</a>
+          <a href="./Profile" className={isActive('/profile') ? 'active' : ''}>Profile</a>
           </li>
           <li>
             < Link to="./login" className={isActive('/logout') ? 'active logout' : 'logout'} style={{color: 'white'}}>Logout</Link>

@@ -1,61 +1,74 @@
-import React, { useState } from 'react';
-import Card from './Card'; 
-import './Carousel.css';
+import React, { useRef } from "react";
+import "./Carousel.css";
 
-const Carousel = () => {
-  const events = [
-    {
-      name: 'Open Mic',
-      date: '01-05-2025',
-      description: 'Join us on the Friday Night to showcase the best of your talent!'
-    },
-    {
-      name: 'Drone Workshop',
-      date: '07-05-2025',
-      description: 'Dive into the future with AI and Robotics workshops.'
-    },
-    {
-      name: 'Astrophysics Quiz',
-      date: '15-05-2025',
-      description: 'Compete in a battle of cosmic knowledge!'
-    },
-    {
-      name: 'Student Innovation Council (SIC) Onboarding',
-      date: '25-05-2025',
-      description: 'Tech Projects and Ideas'
-    },
-    {
-      name: 'Go For Gold : IOI Bootcamp',
-      date: '25-05-2025',
-      description:'Register to be a part of the core committee of Go for Gold'
+const cards = [
+  
+  {
+    title: "You can do more with AI.",
+    description: "AR/VR Workshop",
+    image: "src/assets/image.png",
+  },
+  {
+    title: "Satellite Building Workshop",
+    description: "Lesson on POC and Prototyping : SAST",
+    image: "src/assets/satellite.jpg",
+  },
+  {
+    title: "Apple India Tour",
+    description: "Educational Tour",
+    image: "src/assets/mac.png",
+  },
+  {
+    title: "Launching the Apple Vision Pro.",
+    description: "Product Hackathon",
+    image: "src/assets/vr.png",
+  },
+];
+
+export default function AppleCardsCarouselDemo() {
+  const scrollRef = useRef(null);
+
+  const scrollByAmount = window.innerWidth;
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: scrollByAmount,
+        behavior: "smooth",
+      });
     }
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? events.length - 1 : prevIndex - 1
-    );
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === events.length - 1 ? 0 : prevIndex + 1
-    );
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: -scrollByAmount,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
-    <div className="carousel-container">
-      <Card 
-        eventName={events[currentIndex].name}
-        eventDate={events[currentIndex].date}
-        eventDescription={events[currentIndex].description}
-      />
-      <button className="nav-button left" onClick={handlePrev}>&lt;</button>
-      <button className="nav-button right" onClick={handleNext}>&gt;</button>
+    <div className="carousel-wrapper">
+      <div className="carousel-container" ref={scrollRef}>
+        <div className="carousel-track">
+          {cards.map((card, index) => (
+            <div className="carousel-card" key={index}>
+              <img src={card.image} alt={card.title} className="card-image" />
+              <div className="card-text">
+                <p className="card-description">{card.description}</p>
+                <h2 className="card-title">{card.title}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <button className="carousel-arrow left-arrow" onClick={scrollLeft}>
+        &#8592;
+      </button>
+      <button className="carousel-arrow right-arrow" onClick={scrollRight}>
+        &#8594;
+      </button>
     </div>
   );
-};
-
-export default Carousel;
+}

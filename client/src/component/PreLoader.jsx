@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { preLoaderAnim } from "../animations";
 import "./PreLoader.css";
+import Signup from "../Signup";
 // import "./assets/logo.png"
 
 const PreLoader = () => {
@@ -17,6 +18,7 @@ const PreLoader = () => {
     </div>
   );
 };
+
 
 export default PreLoader;
 

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PreLoader from './component/PreLoader';
 import Card from './component/Card';
 import Profile from './Profile';
+import { Navigate } from 'react-router-dom';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -25,13 +26,14 @@ function App() {
       ) : (
         <>
           <BrowserRouter>
-            <Routes>
-              <Route path="/register" element={<Signup />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/logout" element={<Login />} />
-              <Route path="/profile" element={<Profile />} />
-            </Routes>
+          <Routes>
+          <Route path="/" element={<Navigate to="/register" />} />
+          <Route path="/register" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/logout" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+          </Routes>
           </BrowserRouter>
           
           
